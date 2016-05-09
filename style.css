@@ -2,7 +2,6 @@ h1 {
     color: white;
     font-size: 36px;
     font-weight: bold;
-    background-color: darkblue;
 }
 
 P {
@@ -20,46 +19,29 @@ img {
     border-color: black;
 }
 
-div {
-    width: 50%;
-    float: left;
-}
-
 #starters li {
     color: #0000ff;
     font-weight: bold;
 }
 
 .pizza a {
-    color: red;
-    font-style: italic;
-}
-
-.drinks li {
-    color: purple;
-}
-
-.desserts li {
-    color: yellow;
+    color: #0000ff;
     font-weight: bold;
 }
 
-@media only screen and (max-device-width: 736px) and (orientation: portrait) {
-    h1 {
-        font-size: 40px;
-    }
-    li{
-        font-size: 20px;
-    }
+.drinks li {
+    color: #0000ff;
+    font-weight: bold;
 }
-@media only screen and (max-device-width: 736px) and (orientation: landscape) {
-    h1 {
-        font-size: 50px;
-    }
-    h2 {
-        font-size:30px;
-    }
-    li {
-        font-size: 20px;
-    }
+
+.desserts li {
+    color: #0000ff;
+    font-weight: bold;
+}
+.jumbotron {
+    color: white;
+    background-color: darkblue;
+}
+.jumbotron p {
+    color: white;
 }
