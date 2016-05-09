@@ -12,14 +12,6 @@ P {
 body{
     background-color:lightblue;
 }
-.veggie {
-    color: blue;
-    font-size: 18px;
-}
-.book {
-    font-weight: bold;
-}
-
 img {
     border: double;
 border-color: black;
