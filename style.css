@@ -1,0 +1,26 @@
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    background-color:darkblue;
+}
+P {
+    color: darkblue;
+    font-size: 18px;
+    font-style: oblique;
+}
+body{
+    background-color:lightblue;
+}
+.veggie {
+    color: blue;
+    font-size: 18px;
+}
+.book {
+    font-weight: bold;
+}
+
+img {
+    border: double;
+border-color: black;
+}
