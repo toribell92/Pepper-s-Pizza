@@ -2,17 +2,64 @@ h1 {
     color: white;
     font-size: 36px;
     font-weight: bold;
-    background-color:darkblue;
+    background-color: darkblue;
 }
+
 P {
     color: darkblue;
     font-size: 18px;
     font-style: oblique;
 }
-body{
-    background-color:lightblue;
+
+body {
+    background-color: lightblue;
 }
+
 img {
     border: double;
-border-color: black;
+    border-color: black;
+}
+
+div {
+    width: 50%;
+    float: left;
+}
+
+#starters li {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+.pizza a {
+    color: red;
+    font-style: italic;
+}
+
+.drinks li {
+    color: purple;
+}
+
+.desserts li {
+    color: yellow;
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 736px) and (orientation: portrait) {
+    h1 {
+        font-size: 40px;
+    }
+    li{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-device-width: 736px) and (orientation: landscape) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size:30px;
+    }
+    li {
+        font-size: 20px;
+    }
 }
