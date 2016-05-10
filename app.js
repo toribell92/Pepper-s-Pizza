@@ -1,4 +1,4 @@
-var express = require ("express");
+var express = require("express");
 var bodyParser = require("body-parser");
 var csv = require("ya-csv");
 
@@ -10,9 +10,9 @@ app.get('/pepperspizza', function (request, response) {
 
 app.use(express.static(__dirname + "/pizza"));
 
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
-app.post('/signup', function(request, response) {
+app.post('/signup', function (request, response) {
     var visitorName = request.body.visitorName;
     var visitorEmail = request.body.vistorEmail;
     //open the csv file in 'append' mode
@@ -26,6 +26,6 @@ app.post('/signup', function(request, response) {
     response.send("Thanks " + visitorName + ", you've been signed up to our newsletter");
 });
 
-app.listen(8000, function() {
+app.listen(8000, function () {
     console.log('started the server on port 8000');
 });
