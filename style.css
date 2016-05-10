@@ -12,12 +12,14 @@ P {
 
 body {
     background-color: lightblue;
+    padding-bottom: 40px;
 }
 
 img {
     border: double;
     border-color: black;
     height: 170px;
+    width: 190px;
 }
 
 #starters li {
@@ -45,4 +47,9 @@ img {
 }
 .jumbotron p {
     color: white;
+}
+.picture {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 300px;
 }
