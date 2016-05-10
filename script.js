@@ -14,6 +14,7 @@
 // greet();
 
 var greet = function (event_details) {
+    event_details.preventDefault();
     var greeting = "Hi ";
     var name = document.getElementById('name').value;
     var greeting_message = greeting + name + ". You are now signed up to our newsletter!";
@@ -23,7 +24,9 @@ var greet = function (event_details) {
 
     var container = document.getElementById('contact-form-container');
     container.innerHTML = "<p>" + greeting_message + "</p>";
-    event_details.preventDefault();
+
+    var h2 = document.getElementById('newsletter');
+    h2.style.color = "green";
 };
 
 var form = document.getElementById('contact-form');
