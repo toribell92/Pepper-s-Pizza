@@ -13,8 +13,16 @@
 // };
 // greet();
 
-var greet = function(event_details) {
-    alert ("You are now signed up for our Newsletter!");
+var greet = function (event_details) {
+    var greeting = "Hi ";
+    var name = document.getElementById('name').value;
+    var greeting_message = greeting + name + ". You are now signed up to our newsletter!";
+    // alert(greeting_message);
+    // event_details.preventDefault();
+    event_details.target.style.display = 'none';
+
+    var container = document.getElementById('contact-form-container');
+    container.innerHTML = "<p>" + greeting_message + "</p>";
     event_details.preventDefault();
 };
 
