@@ -15,14 +15,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post('/signup', function (request, response) {
     var visitorName = request.body.visitorName;
     var visitorEmail = request.body.vistorEmail;
-    //open the csv file in 'append' mode
+    //open the csv file in 'append' mode 
     var database = csv.createCsvFileWriter("newsletter_data.csv", {flags: "a"});
     var data = [visitorName, visitorEmail];
     database.writeRecord(data);
-
-    //close the file
+    //close the file 
     database.writeStream.end();
-
     response.send("Thanks " + visitorName + ", you've been signed up to our newsletter");
 });
 
