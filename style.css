@@ -17,6 +17,7 @@ body {
 img {
     border: double;
     border-color: black;
+    height: 170px;
 }
 
 #starters li {
