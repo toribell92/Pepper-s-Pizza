@@ -16,8 +16,7 @@ body {
 }
 
 img {
-    border: double;
-    border-color: black;
+    border: double black;
     height: 170px;
     width: 190px;
 }
@@ -51,6 +50,8 @@ img {
 .picture {
     padding-bottom: 30px;
     padding-top: 30px;
-    margin-left: 300px;
 }
-
+.subphoto {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}

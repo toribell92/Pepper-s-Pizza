@@ -3,7 +3,7 @@
 <head>
     <title>Pepper&#39;s Pizza</title>
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <p>Our menu includes:</p>
     </div>
     <div class="row">
-        <div id="starters" class="col-sm-3">
+        <div id="starters" class="col-sm-6 col-md-3">
             <h2>Starters:</h2>
             <ul>
                 <li>Garlic Bread</li>
@@ -23,7 +23,7 @@
                 <li>Tomato & Mozarella</li>
             </ul>
         </div>
-        <div class="pizza col-sm-3">
+        <div class="col-sm-6 col-md-3">
             <h2>Pizza:</h2>
             <ul>
                 <li>
@@ -48,7 +48,7 @@
                 </li>
             </ul>
         </div>
-        <div class="drinks col-sm-3">
+        <div class="drinks col-sm-6 col-md-3">
             <h2>Drinks:</h2>
             <ul>
                 <li>Fresh Juice</li>
@@ -57,7 +57,7 @@
                 <li>Soft Drinks</li>
             </ul>
         </div>
-        <div class="desserts col-sm-3">
+        <div class="desserts col-sm-6 col-md-3">
             <h2>Desserts:</h2>
             <ul>
                 <li>Lemon Sorbet</li>
@@ -67,12 +67,12 @@
             </ul>
         </div>
     </div>
-    <div class="picture row">
-        <div class="col-sm-3">
-            <img src="../images/Margherita.jpeg"/>
+    <div class="row">
+        <div class="picture col-sm-6">
+            <img src="images/Margherita.jpeg" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-sm-3">
-            <img src="../images/freshfruit.jpeg"/>
+        <div class="picture col-sm-6">
+            <img src="images/freshfruit.jpeg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
     <div class="row">
@@ -86,32 +86,36 @@
                 <a href="mailto:bookings&#64;pepperpizza.co.uk?subject=Bookings">bookings&#64;pepperpizza.co.uk</a>
             </p>
             <p class="book">Or call us at:
-                <a href="tel:0208 947 4409">0208 947 4409</a></p>
+                <a href="tel:0208 947 4409">0208 947 4409</a>
+            </p>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
             <h2 id="newsletter">You can also sign up to our mailing list.</h2>
             <p>You'll hear about our latest offers and news.</p>
-            <div id="contact-form-container">
-                <form class="form" id="contact-form" method="post" action="/signup">
-                    <div class="col-sm-3">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Jane Doe" name="visitorName">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com"
-                                   name="visitorEmail">
-                        </div>
-                        <button type="submit" class="btn btn-default">Get offers</button>
+        </div>
+    </div>
+    <div class="row">
+        <div id="contact-form-container">
+            <form class="form" id="contact-form" method="post" action="/signup">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Jane Doe" name="visitorName">
                     </div>
-                </form>
-            </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com"
+                               name="visitorEmail">
+                    </div>
+                    <button type="submit" class="btn btn-default">Get offers</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
 <script src="script.js"></script>
+<script src="bootstrap.js"></script>
 </body>
 </html>

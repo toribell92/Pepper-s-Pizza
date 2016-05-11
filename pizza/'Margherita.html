@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Margherita</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h1>Margherita Pizza</h1>
-<p>Made with fresh ingredients</p>
-<p>Tomato and Mozarella</p>
-<img src="../images/Margherita.jpeg"/>
+<div class="container">
+    <h1>Margherita Pizza</h1>
+    <p>Made with fresh ingredients</p>
+    <p>Tomato and Mozarella</p>
+    <div class="subphoto">
+        <img src="images/Margherita.jpeg" class="img-fluid" alt="Responsive image">
+    </div>
+<span class="label label-info">
+    <a href="Index.html">Back</a>
+</span>
+    <div class="container">
+        <div class="row">
+            <div class="hidden-print col-md-4">
+                <h1>First</h1>
+            </div>
+            <div class="hidden-print col-md-4">
+                <h1>Second</h1>
+            </div>
+            <div class="hidden-print col-md-4">
+                <h1>Third</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="bootstrap.js"></script>
 </body>
 </html>
